@@ -1,20 +1,28 @@
-# Web Design and Development
+# 🌐 Web Design and Development Project
 
-This project is created for our Web Design and Development subject.
+Welcome to my Web Design and Development project!  
+This repository contains my website project created using modern web technologies.
 
-## Description
-This website demonstrates basic web development using HTML, CSS, and JavaScript.
+---
 
-## Features
-- Responsive layout
-- Navigation menu
-- Image gallery
-- Contact form
+## 📌 About the Project
+This project demonstrates the fundamentals of building a website, including layout design, styling, and basic interactivity. It is part of my learning journey in web development.
 
-## Technologies Used
-- HTML
-- CSS
+---
+
+## 🛠️ Technologies Used
+- HTML5
+- CSS3
 - JavaScript
+  
+---
+  
+## 👨‍💻 Author
+**Kenneth Amiel L. Ibañez**
 
-## Author
-Kenneth Amiel L. Ibañez
+Student | Learning Web Development
+
+---
+
+## ⭐ Support
+If you like this project, feel free to give it a ⭐ on GitHub!
