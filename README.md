@@ -19,6 +19,7 @@ This project demonstrates the fundamentals of building a website, including layo
   
 ## 👨‍💻 Author
 **Kenneth Amiel L. Ibañez**
+
 Student | Learning Web Development
 
 ---
