@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">          
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+
+<style>
+
+/* Reset default spacing */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body style */
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(135deg, #f5e1c0, #d2b48c, #c2a16f);
+  background-size: 600% 600%;
+  animation: bgmove 15s infinite alternate;
+  color: #4b2e2e;
+}
+
+/* Bg animation */
+@keyframes bgmove{
+  0%{background-position:left;}
+  100%{background-position:right;}
+}
+
+/* Login container box */
+.container{
+  background: rgba(255, 248, 220, 0.85); /* light brownish */
+  padding:45px;
+  width:350px;
+  border-radius:20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+  border:1px solid rgba(139,69,19,0.3);
+}
+
+/* Login title */
+h2{
+  text-align:center;
+  margin-bottom:30px;
+  letter-spacing:2px;
+  color: #5a3e2b;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Error message */
+#error-message{
+  display:none;
+  color:#b22222;
+  margin-bottom:15px;
+  text-align:center;
+}
+
+/* Input field container */
+.input-box{
+  margin-bottom:20px;
+}
+
+/* Label style */
+label{
+  font-size:14px;
+  color:#5a3e2b;
+}
+
+/* Textbox and password input style */
+input[type="text"],
+input[type="password"]{
+  width:100%;
+  padding:12px;
+  margin-top:6px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+  background: rgba(245,222,179,0.4);
+  color: #4b2e2e;
+  transition:0.3s;
+  box-shadow: inset 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+/* Input effect when clicked */
+input:focus{
+  box-shadow: 0 0 8px rgba(139,69,19,0.7);
+  background: rgba(245,222,179,0.6);
+}
+
+/* Remember me section */
+.remember{
+  display:flex;
+  align-items:center;
+  margin-bottom:20px;
+  font-size:14px;
+  color: #4b2e2e;
+}
+
+/* Button container */
+.buttons{
+  display:flex;
+  gap:10px;
+}
+
+/* General button style */
+button{
+  flex:1;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Submit button style */
+.submit{
+  background:#d2b48c;
+  color:#fff;
+}
+
+.submit:hover{
+  box-shadow: 0 0 12px rgba(139,69,19,0.7);
+  transform:scale(1.05);
+}
+
+/* Cancel button style */
+.cancel{
+  background:#a0522d;
+  color:white;
+}
+
+.cancel:hover{
+  box-shadow: 0 0 12px rgba(139,69,19,0.7);
+  transform:scale(1.05);
+}
+
+</style>
+
+<script>
+var correctUsername = "admin";
+var correctPassword = "1234";
+
+function checkLogin() {
+    var enteredUsername = document.getElementById("username").value;
+    var enteredPassword = document.getElementById("password").value;
+
+    if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
+        window.location.href = "ibanez.html";
+    } else {
+        document.getElementById("error-message").style.display = "block";
+    }
+}
+
+function clearForm() {
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+    document.getElementById("error-message").style.display = "none";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>LOGIN</h2>
+
+<p id="error-message">❌ Incorrect username or password.</p>
+
+<form>
+
+<div class="input-box">
+<label for="username">Username</label>
+<input type="text" id="username" placeholder="Enter username">
+</div>
+
+<div class="input-box">
+<label for="password">Password</label>
+<input type="password" id="password" placeholder="Enter password">
+</div>
+
+<div class="remember">
+<input type="checkbox" id="remember">
+<label for="remember">Remember</label>
+</div>
+
+<div class="buttons">
+<button type="button" class="submit" onclick="checkLogin()">Submit</button>
+<button type="reset" class="cancel" onclick="clearForm()">Cancel</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>

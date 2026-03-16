@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ABOUT ME</title>
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #dbeafe, #f8fafc);
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #1e3a8a;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    position: relative;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: #93c5fd;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.hero img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #1e3a8a;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(30,58,138,0.6);
+}
+
+h1 {
+    color: #1e3a8a;
+    margin-top: 15px;
+}
+
+/* SECTIONS */
+section {
+    background: white;
+    width: 85%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.4s;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+section:nth-of-type(1) { animation-delay: 0.3s; }
+section:nth-of-type(2) { animation-delay: 0.6s; }
+section:nth-of-type(3) { animation-delay: 0.9s; }
+
+section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #1e3a8a;
+}
+
+p {
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 15px;
+    color: #333;
+}
+
+/* CONTACT */
+.contact p {
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact p:hover {
+    color: #1e3a8a;
+    transform: scale(1.05);
+}
+
+/* TOP BUTTON */
+.top-btn {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: 80px;
+    padding: 10px;
+    background-color: #1e3a8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.top-btn:hover {
+    background-color: #2563eb;
+    transform: translateY(-5px);
+}
+
+/* FADE ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="#Contact">Contact</a>
+    <a href="#Myself">About Myself</a>
+    <a href="#Services">Services</a>
+</nav>
+
+<!-- Photo on Top -->
+<div class="hero">
+    <img src="PHOTO.jpg" alt="Kenneth Photo">
+    <h1>Kenneth's Portfolio</h1>
+</div>
+
+<!-- About Myself -->
+<section id="Myself">
+<h2>About Myself</h2>
+
+<p>
+Hello! I’m Kenneth Amiel L. Ibañez, a second-year student at Eulogio "Amang" Rodriguez Institute of Science and Technology, currently pursuing my studies in the field of Information Technology. I have a deep interest in programming, software development, and emerging technologies, and I am committed to continuously improving my technical skills to become a competent and innovative IT professional in the future.
+<br><br>
+My journey in programming began with learning foundational languages such as C and C++. Through these languages, I developed a strong understanding of core programming concepts including variables, control structures, functions, arrays, pointers, and object-oriented principles. More importantly, studying C and C++ trained me to think logically and approach problems in a structured and analytical way. I learned how to break down complex problems into smaller, manageable components and design efficient solutions through careful planning and debugging. These experiences strengthened my problem-solving mindset and helped me build confidence in writing clean, organized, and efficient code.
+<br><br>
+In addition to general programming, I have hands-on experience with Excel VBA, where I create automation tools and enhance spreadsheet functionality to improve productivity. I enjoy identifying repetitive or time-consuming tasks and designing automated solutions that make processes faster and more efficient. Working with VBA allowed me to understand how programming can be applied in practical, real-world scenarios, especially in data organization, reporting, and workflow improvement.
+<br><br>
+Currently, I am expanding my knowledge in web development. I am fascinated by how front-end and back-end technologies work together to create dynamic and interactive web applications. On the front-end side, I enjoy designing user interfaces that are simple, responsive, and user-friendly. On the back-end side, I am learning how servers, databases, and application logic function to support and power websites. Seeing a project progress from an idea to a fully functional website motivates me to continue learning and experimenting with new tools and frameworks.
+<br><br>
+Beyond technical skills, I value continuous learning, adaptability, and self-improvement. Technology is constantly evolving, and I believe that staying curious and open to new ideas is essential for growth in this field. I actively seek opportunities to challenge myself, whether through academic projects, personal practice, or exploring new technologies outside of class requirements.
+<br><br>
+As a future IT professional, my goal is not only to build functional systems but also to create solutions that are efficient, reliable, and meaningful. I am eager to gain real-world experience through internships, collaborative projects, and industry exposure, where I can apply my knowledge, learn from experienced professionals, and further refine my skills.
+<br><br>
+I am passionate about technology and excited about the opportunities ahead. With dedication, persistence, and a strong desire to learn, I am determined to continue growing and making valuable contributions in the field of programming and information technology.
+</p>
+</section>
+
+<!-- Services -->
+<section id="Services">
+<h2>My Services</h2>
+
+<p>
+I provide reliable and professional computer services dedicated to helping individuals and businesses maintain efficient and smoothly functioning technology systems. My goal is to deliver practical, cost-effective, and long-lasting solutions that ensure optimal system performance and customer satisfaction.
+<br><br>
+My services include computer repair and troubleshooting, hardware diagnostics and upgrades, virus and malware removal, software installation and configuration, data recovery, and basic network setup. I carefully assess technical issues, identify the root cause of problems, and implement appropriate solutions to restore system functionality. I prioritize efficiency and attention to detail to minimize downtime and prevent recurring issues.
+<br><br>
+In addition to offering computer services, I have also assisted Professor Rivera in maintaining and troubleshooting the computers in our computer laboratory at Eulogio "Amang" Rodriguez Institute of Science and Technology. My responsibilities included diagnosing system errors, fixing software-related problems, optimizing performance, and ensuring that the laboratory computers were ready for student use. This experience allowed me to apply my technical knowledge in a real-world environment, strengthen my troubleshooting skills, and develop a strong sense of responsibility when handling institutional equipment.
+<br><br>
+Through these experiences, I have learned the importance of professionalism, clear communication, and reliable service. I am committed to continuously improving my technical expertise to provide high-quality computer solutions that meet the needs of clients and organizations.
+</p>
+</section>
+
+<!-- Contact -->
+<section id="Contact" class="contact">
+<h2>My Contact</h2>
+<p style="color:blue;">kennethibanez25@gmail.com</p>
+<p>iwasken1gmail.com</p>
+<p>09945243143</p>
+</section>
+
+<a href="#" class="top-btn">UP</a>
+
+</body>
+</html>
