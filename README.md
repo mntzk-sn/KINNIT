@@ -12,7 +12,7 @@ This project demonstrates the fundamentals of building a website, including layo
 
 ## 🛠️ Technologies Used
 - HTML
-- CSS3
+- CSS
 - JavaScript
   
 ---
